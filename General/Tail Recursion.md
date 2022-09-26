@@ -18,7 +18,7 @@ recFactorial(4);
 ``` 
 
 * Time: O(n)
-* Space: O(n) because all the calls to the function must wait on an answer (have to calculate x*blah blah): return x * recFactorial(x -1), for factorial 4 there were in total 4 calls to the function (4 recursive stacks)
+* Space: O(n) because all the calls to the function must wait on an answer (have to calculate x*blah blah): `return x * recFactorial(x -1)`, for factorial 4 there were in total 4 calls to the function (4 recursive stacks)
 
 ## Tail Recursion
 ```JavaScript 
@@ -41,5 +41,5 @@ tailFactorial(0, 24);
 ```
 
 * Time: O(n)
-* Space: O(1) because we are no longer waiting on an answer (no waiting on x * blah blah calculation): return tailFactorial(x - 1, totalSoFar * x) 
+* Space: O(1) because we are no longer waiting on an answer (no waiting on x * blah blah calculation): `return tailFactorial(x - 1, totalSoFar * x)` 
 * Engine compiler dependent: tail recursion O(1) space won’t occur
